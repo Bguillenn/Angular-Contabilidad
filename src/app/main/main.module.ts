@@ -13,6 +13,7 @@ import { ConsultasComponent } from './pages/consultas/consultas.component';
 import { ExtrasComponent } from './pages/extras/extras.component';
 import { ProveedoresComponent } from './pages/proveedores/proveedores.component';
 import { CuentasComponent } from './pages/cuentas/cuentas.component';
+import { BuildingComponent } from './pages/building/building.component';
 
 
 
@@ -25,7 +26,8 @@ import { CuentasComponent } from './pages/cuentas/cuentas.component';
     ConsultasComponent,
     ExtrasComponent,
     ProveedoresComponent,
-    CuentasComponent
+    CuentasComponent,
+    BuildingComponent
   ],
   imports: [
     CommonModule,

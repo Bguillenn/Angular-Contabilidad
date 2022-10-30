@@ -1,0 +1,11 @@
+.my-navbar{
+    font-size: 1em;
+    border-bottom: 2px solid var(--lightGray);
+}
+
+.my-navbar img {
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 100%;
+    border: 1px solid var(--lightGray);
+}
