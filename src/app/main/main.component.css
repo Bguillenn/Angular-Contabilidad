@@ -1,0 +1,94 @@
+/**SIDEBAR STYLES*/
+.mat-drawer-side{ border: none }
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+}
+
+.sidenav {
+    background-color: var(--darkGray);
+}
+
+.big-separator{
+    width: 100%;
+    height: 4em;
+}
+
+/**BUTTON COLLAPSE*/
+
+.btn-collapse-side{
+    padding: 1.5em 1.5em;
+    background-color: var(--darkGray);
+    border: none;
+    color: var(--gray);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+}
+
+.btn-collapse-side:hover{
+    background-color: var(--semiDarkGray);
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+}
+
+.btn-collapse-side > i {
+    font-size: 1.2em;
+}
+
+.btn-collapse-side > small {
+    margin-left: 1em;
+}
+
+/**BUTTONS NAVIGATION*/
+
+.link-list {
+    padding-left: 0.5em;
+    margin: 0;
+    list-style-type: none;
+}
+
+.link-nav{
+    background-color: var(--darkGray);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    color: var(--gray);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+}
+
+.link-nav > span {
+    margin-left: 1em;
+}
+
+.link-nav-selected {
+    background-color: var(--bgColor);
+    color: var(--mainBlue)
+}
+
+.link-nav:hover{
+    background-color: var(--semiDarkGray);
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+}
+
+.link-nav.link-nav-selected:hover{
+    background-color: var(--bgColor);
+}

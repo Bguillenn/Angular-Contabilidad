@@ -1,0 +1,51 @@
+<mat-drawer-container class="main-container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side" opened>
+    <button (click)="showFiller = !showFiller" class="btn-collapse-side" mat-raised-button>
+      <i class="fa-solid fa-angles-right" [ngClass]="{'fa-flip-horizontal': showFiller}"></i>
+      <small *ngIf="showFiller">OCULTAR</small>
+    </button>
+
+    <div class="big-separator"></div>
+
+    <menu class="link-list">
+      <!-- DASHBOARD -->
+      <li routerLink="/main/dashboard" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.dashboard)}">
+        <i class="fa-solid fa-house fa-fw"></i>
+        <span *ngIf="showFiller">Dashboard</span>
+      </li>
+      <!-- DOCUMENTOS -->
+      <li routerLink="/main/documentos" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.documentos)}">
+          <i class="fa-solid fa-clipboard-list fa-fw"></i>
+          <span *ngIf="showFiller">Documentos</span>
+      </li>
+      <!-- CONSULTAS -->
+      <li routerLink="/main/consultas" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.consultas)}">
+        <i class="fa-solid fa-chart-pie fa-fw"></i>
+        <span *ngIf="showFiller">Consultas</span>
+      </li>
+      <!-- EXTRAS -->
+      <li routerLink="/main/extras" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.extras)}">
+        <i class="fa-solid fa-toolbox fa-fw"></i>
+        <span *ngIf="showFiller">Extras</span>
+      </li>
+      <!-- PROVEEDORES / CLIENTES -->
+      <li routerLink="/main/proveedores" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.proveedores)}">
+        <i class="fa-solid fa-truck fa-fw"></i>
+        <span *ngIf="showFiller">Proveedores/Clientes</span>
+      </li>
+      <!-- CUENTAS -->
+      <li routerLink="/main/cuentas" class="link-nav" [ngClass]="{'link-nav-selected' : isCurrentRoute(routes.cuentas)}">
+        <i class="fa-solid fa-file-invoice-dollar fa-fw"></i>
+        <span *ngIf="showFiller">Cuentas</span>
+      </li>
+    </menu>
+    
+  </mat-drawer>
+
+  <section>
+    <app-navbar></app-navbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </section>
+</mat-drawer-container>
