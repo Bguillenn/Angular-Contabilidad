@@ -1,0 +1,82 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkGray);
+    position: relative;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card{
+    display: inline-block;
+    width: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2em;
+    width: 25em;
+    z-index: 10;
+}
+
+.login-card > h3 {
+    color: var(--mainBlue);
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-card > p {
+    font-size: 14px;
+    color: var(--semiDarkGray);
+    text-align: center;
+}
+
+.login-card > p > small {
+    color: var(--gray);
+}
+
+.btn {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.button-main-blue{
+    background-color: var(--mainBlue);
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-main-blue:hover { background-color: var(--mainBlueDark);}
+.button-main-blue:active { background-color: var(--mainBlueLight); color: white; outline-width: 0; border: none; }
+
+.button-google{
+    background-color: var(--red);
+    color: white;
+}
+
+
+.button-google:hover { background-color: var(--darkRed);}
+.button-google:active { background-color: var(--lightRed); color: white; outline-width: 0; border: none;}
+
+.button-block {
+    width: 100%;
+}
+
+/**
+BACKGROUND ITEMS
+*/
+#top-bars, #bottom-bars{
+    position: fixed;
+    opacity: 0.025;
+    left: 0;
+    width: 100%;
+}
+
+#top-bars{
+    top:0;
+}
+
+#bottom-bars{
+    bottom: 0;
+}
