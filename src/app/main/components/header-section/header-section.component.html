@@ -1,0 +1,11 @@
+<div class="header-section">
+   <div class="button-box" *ngIf="!isCurrentRoute() && route!='/default'">
+        <button class="btn btn-back">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+        </button>
+   </div>
+    <div class="section-title">
+       <div> <i [ngClass]="icon" class="fa-fw fa-lg"></i> </div>
+        {{ title }}
+    </div>
+</div>

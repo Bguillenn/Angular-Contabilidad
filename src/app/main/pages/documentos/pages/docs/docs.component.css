@@ -1,0 +1,43 @@
+.header-card{
+    border-bottom: 2px solid var(--lightGray);
+}
+
+.button-outline-primary{
+    border: 1px solid var(--mainBlue);
+    color: var(--mainBlue);
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.6em 3em;
+}
+
+.button-outline-primary:hover {
+    background-color: var(--mainBlue);
+    color: white;
+}
+
+.header-container > h4{
+    font-size: 1.1em;
+    color: var(--textGray)
+}
+
+.header-container > ul {
+    font-size: 0.8em;
+    color: var(--textGray);
+}
+
+.pill {
+    display: inline-block;
+    padding: 0 1em;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 10px ;
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-green{
+    background-color: var(--green);
+}

@@ -4,6 +4,7 @@
     --semiDarkGray: #525252;
     --bgColor: #F8FCFF;
     --gray: #989898;
+    --textGray: #7D7D7D;
     --mainBlue: #269BD8;
     --mainBlueDark: #268BBF;
     --mainBlueLight: #2CB1F6;
@@ -11,6 +12,7 @@
     --red: #FF4343;
     --darkRed: #e12525;
     --lightRed: #fe4646;
+    --green: #3C9E00;
 }
 
 html, body { 
@@ -69,4 +71,49 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 10px;
     margin-left: 0.5em;
     color: var(--red);
+}
+
+
+/**MATTABS*/
+.mat-tab-labels{
+    background-color: white;
+}
+.mat-ink-bar{
+    background-color: var(--mainBlue) !important;
+}
+
+/** CUSTOM CARDS*/
+.card {
+    border: 1px var(--lightGray);
+    box-shadow: 0 0 20px rgba(0,0,0,0.10);
+
+}
+
+ /**TABLES*/
+ thead {
+    color: var(--gray);
+    font-size: 0.8em;
+    font-weight: normal !important;
+}
+
+.table-header{
+    font-weight: 500 !important;
+}
+
+tbody > tr{
+    font-size: 0.8em;
+    color: var(--darkGray);
+    word-wrap: break-word;
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.text-green{
+    color: var(--green)
+}
+
+.text-bold{
+    font-weight: bold;
 }

@@ -1,0 +1,14 @@
+.button-table{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+.button-edit {
+    color: var(--green)
+}
+
+.button-delete {
+    color: var(--red)
+}

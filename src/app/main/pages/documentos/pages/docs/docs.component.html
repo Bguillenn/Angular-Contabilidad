@@ -1,0 +1,25 @@
+<div class="m-3 p-3 bg-white card">
+    <div class="d-flex flex-row justify-content-between header-card">
+        <div class="header-container">
+            <h4>Numero de documentos</h4>
+            <ul>
+                <li>Pendientes: [Num]</li>
+                <li>Procesados: [Num]</li>
+            </ul>
+        </div>
+        <div class="header-container">
+            <h4>Leyenda</h4>
+            <span class="pill bg-red mx-2">Salidas (20)</span>
+            <span class="pill bg-green">Entradas (15)</span>
+        </div>
+        <div class="align-self-center">
+            <button class="btn button-outline-primary"> <i class="fa-solid fa-plus"></i> Nuevo documento</button>
+        </div>
+    </div>
+    
+    <mat-tab-group>
+        <mat-tab label="DODUMENTOS PENDIENTES"> <app-documentos-pendientes></app-documentos-pendientes> </mat-tab>
+        <mat-tab label="DOCUMENTOS PROCESADOS"> <app-documentos-procesados></app-documentos-procesados> </mat-tab>
+    </mat-tab-group>
+
+</div>

@@ -12,4 +12,6 @@ export class ConsultasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
+
 }
