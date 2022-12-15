@@ -5,6 +5,7 @@ import { CuotasComponent } from './pages/cuotas/cuotas.component';
 import { TransferenciasComponent } from './pages/transferencias/transferencias.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { DocumentosComponent } from './documentos.component';
+import { DocumentosCrearComponent } from './components/documentos-crear/documentos-crear.component';
 import { BuildingComponent } from '../building/building.component';
 
 const routes: Routes = [
@@ -12,11 +13,11 @@ const routes: Routes = [
     path: '',
     component: DocumentosComponent,
     children: [
-      {path: 'docs', component: DocsComponent},
+      {path: 'docs', component: DocsComponent}, 
       {path: 'cuotas', component: CuotasComponent},
       {path: 'transferencias', component: TransferenciasComponent},
 
-      {path: 'docs/nuevo', component: BuildingComponent},
+      {path: 'docs/nuevo', component: DocumentosCrearComponent},
 
       {path: '**', redirectTo: 'docs'}
     ]

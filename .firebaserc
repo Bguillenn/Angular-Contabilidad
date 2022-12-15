@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "inmobiliaria-contabilidad"
+  },
+  "targets": {
+    "inmobiliaria-contabilidad": {
+      "hosting": {
+        "inmobiliaria": [
+          "inmobiliaria-contabilidad"
+        ]
+      }
+    }
+  }
+}

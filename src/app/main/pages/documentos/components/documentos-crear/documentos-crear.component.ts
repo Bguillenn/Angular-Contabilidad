@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentosCrearComponent implements OnInit {
 
+  titulo:string = "CREAR NUEVO DOCUMENTO"
+
   constructor() { }
 
   ngOnInit(): void {
