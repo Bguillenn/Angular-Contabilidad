@@ -12,7 +12,12 @@
             <span class="pill bg-red mx-2">Salidas (20)</span>
             <span class="pill bg-green">Entradas (15)</span>
         </div>
+
         <div class="align-self-center">
+            <div class="align-self-center">
+                <input type="file" name="file" class="btn button-outline-primary" id="inputGroupFile" required (change)="XLSImport($event)"
+                  accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
             <button class="btn button-outline-primary"> <i class="fa-solid fa-plus"></i> Nuevo documento</button>
         </div>
     </div>
