@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-documentos-crear',
   templateUrl: './documentos-crear.component.html',
@@ -11,5 +12,8 @@ export class DocumentosCrearComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+ 
 
 }
